@@ -1,4 +1,5 @@
 var $filterBtn = document.getElementsByClassName('filter-btn');
+var $mainNavigation = document.getElementById('main-navigation');
 
 // Toggles the "active" class for the buttons.
 
@@ -47,6 +48,13 @@ function smoothScroll(Element) {
 }
 
 document.getElementById('menuToggleInput').addEventListener("click", function (event) {
-  var $mainNavigation = document.getElementById('main-navigation');
   $mainNavigation.classList.toggle('open');
 });
+
+window.onresize = function(event) {
+  console.log(window.innerWidth);
+  if (window.innerWidth > 768) {
+    document.getElementById('menuToggleInput').checked = false;
+    $mainNavigation.classList.remove('open');
+  }
+};
