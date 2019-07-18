@@ -73,14 +73,10 @@ header {
     position: absolute;
     top: 2.18rem;
     display: none;
-    transform-origin: 0.25rem 0;
-    transition: all 5s ease;
 
     &.open {
       display: block;
-      background-color: black;
-      transform-origin: 0.25rem 0;
-      transition: all 5s ease;
+      background-color: $black;
     }
   }
 
@@ -154,6 +150,13 @@ header {
 
       ul {
         float: right;
+      }
+    }
+
+    #main-navigation {
+
+      &.open {
+        background-color: transparent;
       }
     }
   }
