@@ -1,0 +1,21 @@
+@import "normalize/import-now";
+
+@import 'utils/variables';
+
+@import 'base/heading';
+@import 'base/paragraph';
+@import 'base/hr';
+@import 'base/btn';
+
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'pages/home';
+
+@import 'themes/theme';
+
+@import 'themes/block/services';
+@import 'themes/block/projects';
+
+

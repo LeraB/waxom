@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header class="wrapper ov-flow">
+    <div class="container">
+        <div class="row nav-wrapper">
+            <div class="logo col-6 col-md-3">
+                <a href="#">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+            </div>
+            <div id="menuToggle" class="ov-flow col-6 d-block d-md-none">
+                <div class="mobile-menu-wrapper">
+                <input id="menuToggleInput" type="checkbox" class="d-block d-md-none" />
+
+                <span  class="d-block d-md-none" ></span>
+                <span  class="d-block d-md-none" ></span>
+                <span  class="d-block d-md-none" ></span>
+                </div>
+            </div>
+            <nav id="main-navigation" class="col-12 col-md-9 d-md-block " role="navigation">
+
+                <ul class="list-unstyled">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+        <div class="header-content container">
+            <h3>Unique and Modern Design</h3>
+            <h1>Portfolio PSD Template</h1>
+            <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat
+                facer possim assum.</p>
+            <a href="#page-contet" id="get-started-link" onclick="smoothScroll('page-contet')">Get Started</a>
+        </div>
+    </div>
+</header>
+<main id="page-contet" class="container">
+    <section class="services-wrapper">
+        <ul class="row list-unstyled">
+            <li class="col-12 col-sm-6 col-md-3">
+                <a href="#">
+                    <img src="img/services-design-icon.svg" alt="ervices-design-icon">
+                    <h4>Web & App Design</h4>
+                    <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod
+                        mazim.</p>
+                    <hr/>
+                </a>
+            </li>
+            <li class="col-12 col-sm-6 col-md-3">
+                <a href="#">
+                    <img src="img/services-development.svg" alt="services-development">
+                    <h4>Development</h4>
+                    <p>Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                        laoreet.</p>
+                    <hr/>
+                </a>
+            </li>
+            <li class="col-12 col-sm-6 col-md-3">
+                <a href="#">
+                    <img src="img/services-customization.svg" alt="services-customization">
+                    <h4>Customization</h4>
+                    <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod
+                        mazim.</p>
+                    <hr/>
+                </a>
+            </li>
+            <li class="col-12 col-sm-6 col-md-3">
+                <a href="#">
+                    <img src="img/services-marketing.svg" alt="services-marketing">
+                    <h4>Marketing</h4>
+                    <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod
+                        mazim.</p>
+                    <hr/>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <section class="projects-wrapper">
+        <h3>Our Latest Projects.</h3>
+        <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus
+            dynamicus, qui sequitur mutationem consuetudium.</p>
+        <div id="btn-container">
+            <button class="btn filter-btn active" onclick="filterSelection('all')">All</button>
+            <button class="btn filter-btn" onclick="filterSelection('type-graphic-design')">Graphic Design</button>
+            <button class="btn filter-btn" onclick="filterSelection('type-mock-up')">Mock-Up</button>
+            <button class="btn filter-btn" onclick="filterSelection('type-holiday')">Holiday</button>
+            <button class="btn filter-btn" onclick="filterSelection('type-photography')">Photography</button>
+        </div>
+        <div class="container">
+            <div class="row">
+                <a href="#" class="filter-item col-12 col-sm-6 col-md-4 type-photography type-nature">
+                    <div class="item-image">
+                        <img src="img/project-claritas-etiam-processus.png" alt="project-claritas-etiam-processus">
+                    </div>
+                    <div class="item-content">
+                        <h4>Claritas Etiam Processus</h4>
+                        <p>Photography, Nature</p>
+                    </div>
+                </a>
+
+                <a href="#" class="filter-item col-12 col-sm-6 col-md-4 type-graphic-design">
+                    <div class="item-image">
+                        <img src="img/project-quam-nutamus-farum.png" alt="project-quam-nutamus-farum">
+                    </div>
+                    <div class="item-content">
+                        <h4>Quam Nutamus Farum</h4>
+                        <p>Graphic Design</p>
+                    </div>
+                </a>
+
+                <a href="#" class="filter-item col-12 col-sm-6 col-md-4 type-photography type-holiday">
+                    <div class="item-image">
+                        <img src="img/project-usus-legentis-videntur-1.png" alt="project-usus-legentis-videntur-1">
+                    </div>
+                    <div class="item-content">
+                        <h4>Usus Legentis Videntur</h4>
+                        <p>Photography, Holiday</p>
+                    </div>
+                </a>
+
+                <a href="#" class="filter-item col-12 col-sm-6 col-md-4 type-photography type-nature">
+                    <div class="item-image">
+                        <img src="img/project-claritas-etiam-processus-1.png" alt="project-claritas-etiam-processus-1">
+                    </div>
+                    <div class="item-content">
+                        <h4>Claritas Etiam Processus</h4>
+                        <p>Photography, Nature</p>
+                    </div>
+                </a>
+
+                <a href="#" class="filter-item col-12 col-sm-6 col-md-4 type-graphic-design type-mock-up">
+                    <div class="item-image">
+                        <img src="img/project-quam-nutamus-farum-1.png" alt="project-quam-nutamus-farum-1">
+                    </div>
+                    <div class="item-content">
+                        <h4>Quam Nutamus Farum</h4>
+                        <p>Graphic Design, Mock-Up</p>
+                    </div>
+                </a>
+
+                <a href="#" class="filter-item col-12 col-sm-6 col-md-4 type-photography type-holiday">
+                    <div class="item-image">
+                        <img src="img/poject-usus-legentis-videntur.png" alt="poject-usus-legentis-videntur">
+                    </div>
+                    <div class="item-content">
+                        <h4>Usus Legentis Videntur</h4>
+                        <p>Photography, Holiday</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="branding col-12 col-sm-6 col-md-3">
+                <a href="#">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+                    suscipit lobortis claritatem.
+                </p>
+            </div>
+            <div class="mt-4  mt-sm-0 col-12 col-sm-6 col-md-5">
+                <h5>Recent Posts</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#">
+                            <span>September 08, 2015</span>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                            <hr/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>September 08, 2015</span>
+                            <p>Diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p>
+                            <hr/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>September 08, 2015</span>
+                            <p>Claritas est etiam processus dynamicus, qui sequitur mutationem per seacula quarta
+                                decima</p>
+                            <hr/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mt-4  mt-md-0 instagram-block col-8 col-sm-6 col-md-4">
+                <h5>Instagram</h5>
+                <img src="img/insta-1.png" class="m-1">
+                <img src="img/insta-2.png" class="m-1">
+                <img src="img/insta-3.png" class="m-1">
+                <img src="img/insta-4.png" class="m-1">
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

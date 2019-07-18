@@ -1,0 +1,85 @@
+footer {
+  background-color: #191919;
+  padding: 2rem 0;
+
+  .branding {
+
+    img {
+      width: 100%;
+      max-width: 200px;
+    }
+
+    p {
+      line-height: 1.5;
+      font-size: 0.5rem;
+      margin-top: 2rem;
+    }
+  }
+
+  h5 {
+    color: $white;
+    font-size: 0.75rem;
+  }
+
+  a {
+    &:hover {
+      text-decoration: none;
+
+      span {
+        color: $white;
+      }
+
+      p {
+        color: #c7b299;
+      }
+    }
+  }
+
+  span {
+    font-size: 8px;
+    color: #363636;
+    font-weight: 300;
+  }
+
+  p {
+    color: #555;
+    font-size: 10px;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
+
+  hr {
+    border-top-color: #252525;
+    width: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .instagram-block {
+    overflow: hidden;
+
+    h5 {
+      text-transform: uppercase;
+    }
+
+    img {
+      max-width: 45%;
+    }
+  }
+}
+@media (min-width: 768px) {
+  footer {
+    .instagram-block {
+      overflow: hidden;
+
+      h5 {
+        text-align: right;
+      }
+
+      img {
+        max-width: 45%;
+        float: right;
+      }
+    }
+  }
+}
