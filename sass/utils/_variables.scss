@@ -9,11 +9,20 @@ $base-font-size: 16px;
 // ====================
 
 $white: #fff;
+
+$lighter-brown: #c7b299;
 $light-brown: #c7b299;
 $brown: #998675;
 $dark-brown: #736357;
+
+$lightest-grey: #fbfaf8;
 $grey: #ebebeb;
+$light-grey: #cdcdcd;
 $dark-grey: #8c8c8c;
+$darker-grey: #555;
+$darkest-grey: #363636;
+
+$black: #191919;
 
 // Text colors.
 $text-white: $white;
@@ -23,3 +32,6 @@ $link-hover: $light-brown;
 
 // button.
 $btn-brown: $brown;
+
+// hr.
+$hr-border-top: #252525;

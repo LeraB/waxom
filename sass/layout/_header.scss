@@ -44,11 +44,11 @@ header {
     #get-started-link {
       color: $white;
       font-weight: 400;
-      line-height: 23px;
+      line-height: 1.4rem;
       text-transform: uppercase;
       background-color: $btn-brown;
-      border-radius: 3px;
-      box-shadow: inset 0 -3px 0 $dark-brown;
+      border-radius: 0.18rem;
+      box-shadow: inset 0 -0.18rem 0 $dark-brown;
       padding: 0.4rem 0.75rem 0.5rem 0.75rem;
       font-size: 0.75rem;
 
@@ -71,15 +71,15 @@ header {
 
   #main-navigation {
     position: absolute;
-    top: 35px;
+    top: 2.18rem;
     display: none;
-    transform-origin: 4px 0;
+    transform-origin: 0.25rem 0;
     transition: all 5s ease;
 
     &.open {
       display: block;
       background-color: black;
-      transform-origin: 4px 0;
+      transform-origin: 0.25rem 0;
       transition: all 5s ease;
     }
   }
@@ -93,65 +93,52 @@ header {
 
   #menuToggle input {
     display: block;
-    width: 40px;
-    height: 32px;
+    width: 2.5rem;
+    height: 2rem;
     position: absolute;
-    top: -7px;
+    top: -0.43rem;
     cursor: pointer;
     opacity: 0;
     z-index: 2;
   }
 
-  /*
-   * Just a quick hamburger
-   */
   #menuToggle span {
     display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
+    width: 2rem;
+    height: 0.25rem;
+    margin-bottom: 0.3rem;
     position: relative;
-    background: #cdcdcd;
-    border-radius: 3px;
-    z-index: 1;
-    transform-origin: 4px 0;
+    background: $light-grey;
+    border-radius: 0.15rem;
+    transform-origin: 0.25rem 0;
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
     background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
     opacity 0.55s ease;
   }
 
   #menuToggle span:nth-last-child(2) {
-    transform-origin: 20px 20px;
+    transform-origin: 1.25rem 1.25rem;
   }
 
   #menuToggle span:nth-last-child(1) {
-    transform-origin: 10px -10px;
+    transform-origin: 0.6rem -0.6rem;
   }
 
-  /*
-   * Transform all the slices of hamburger
-   * into a crossmark.
-   */
   #menuToggle input:checked ~ span {
     opacity: 1;
-    transform: rotate(45deg) translate(-2px, -1px);
+    transform: rotate(45deg) translate(-0.12rem, -0.06rem);
   }
 
-  /*
-   * But let's hide the middle one.
-   */
   #menuToggle input:checked ~ span:nth-last-child(3) {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
   }
 
-  /*
-   * Ohyeah and the last one should go the other direction
-   */
   #menuToggle input:checked ~ span:nth-last-child(2) {
-    transform: rotate(-45deg) translate(0, -1px);
+    transform: rotate(-45deg) translate(0, -0.06rem);
   }
 }
+
 @media (min-width: 575.98px) {
   header {
     p {
@@ -170,9 +157,4 @@ header {
       }
     }
   }
-}
-
-@-webkit-keyframes open {
-  0% { height: 0px }
-  100% { height: 1000px }
 }

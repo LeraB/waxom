@@ -1,12 +1,12 @@
 footer {
-  background-color: #191919;
+  background-color: $black;
   padding: 2rem 0;
 
   .branding {
 
     img {
       width: 100%;
-      max-width: 200px;
+      max-width: 12.5rem;
     }
 
     p {
@@ -30,26 +30,26 @@ footer {
       }
 
       p {
-        color: #c7b299;
+        color: $light-brown;
       }
     }
   }
 
   span {
-    font-size: 8px;
-    color: #363636;
+    font-size: 0.5rem;
+    color: $darkest-grey;
     font-weight: 300;
   }
 
   p {
-    color: #555;
-    font-size: 10px;
+    color: $darker-grey;
+    font-size: 0.6rem;
     font-weight: 300;
     margin-bottom: 0;
   }
 
   hr {
-    border-top-color: #252525;
+    border-top-color: $hr-border-top;
     width: auto;
     margin-top: 0.5rem;
     margin-bottom: 0.25rem;
@@ -67,6 +67,7 @@ footer {
     }
   }
 }
+
 @media (min-width: 768px) {
   footer {
     .instagram-block {

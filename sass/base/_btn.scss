@@ -1,19 +1,19 @@
 .btn {
-  border-radius: 3px;
-  border: 1px solid $grey;
+  border-radius: 0.18rem;
+  border: 0.06rem solid $grey;
   background-color: $white;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   color: $dark-grey;
-  font-size: 14px;
+  font-size: 0.85rem;
   font-weight: 300;
 
   &.active,
   &:hover,
   &:active,
-  &:focus{
-    background-color: #998675;
-    color: white;
+  &:focus {
+    background-color: $brown;
+    color: $white;
     box-shadow: none;
   }
 }
